@@ -1,0 +1,1 @@
+update_trigger_activator_triggers();

@@ -1,0 +1,2 @@
+
+YOU SHOULD PLACE obj_trigger_system ON THE FIRST ROOM OF THE GAME
