@@ -2,7 +2,7 @@ EasyTrigger by seongHoon
 
 Download(.yymps) : https://drive.google.com/file/d/1i5qzb9Qb44W5gIDRraiTOvHYtYVtQBQh/view?usp=sharing
 
-
+![Runner_BIKWKOaimZ](https://github.com/user-attachments/assets/22c9ed09-ae27-4fb4-8bed-d75146f161bd)
 
 <간단한 사용방법>
 
