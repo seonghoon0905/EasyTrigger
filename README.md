@@ -2,7 +2,10 @@ EasyTrigger by seongHoon
 
 Download(.yymps) : https://drive.google.com/file/d/1i5qzb9Qb44W5gIDRraiTOvHYtYVtQBQh/view?usp=sharing
 
+
+
 <간단한 사용방법>
+
 
 먼저 패키지를 다운해서 트리거 시스템을 적용하기를 원하는 게임메이커 프로젝트에 import 해주세요. 
 
@@ -23,10 +26,15 @@ Download(.yymps) : https://drive.google.com/file/d/1i5qzb9Qb44W5gIDRraiTOvHYtYVt
 creation code에 아래와 같은 코드를 적어봅시다. 
 
 set_trigger(1, 2); // 인스턴스가 사용할 키를 지정합니다.
+
 add_trigger_point(1, 0, 0, 50); // 함수의 요구 인자 : (_key, _x, _y, _time, _delay = 0, _anim_curve = ac_linear)
+
 add_trigger_image_rotation(1, 360, 50); // 함수의 요구 인자 : (_key, _angle, _time, _delay = 0, _anim_curve = ac_linear)
+
 add_trigger_point(2, 32, 32, 50);
+
 // 함수가 요구하는 인자 값을 전부 넣을 필요는 없습니다. (변수 = n) 형식의 인자는 이미 기본값이 정해졌기 때문에 필요에 따라 값을 바꿔도 됩니다.
+
 그러면 플레이어가 키 1에 해당하는 액티베이터와 상호작용할 시 트리거 인스턴스는 초기 위치에서 (0, 0)까지 
 50프레임 안에 이동하는 동시에 해당 인스턴스의 스프라이트가 360도까지 회전합니다. 또한 키 2와 상호작용하면 (0, 0)에서 (32, 32)으로 50프레임 안에 이동하게 됩니다.
 (키2를 먼저 활성화하고, 키1을 활성화하는 것은 불가능합니다. 트리거 인스턴스에 키를 넣은 순서대로 실행됩니다.)
@@ -34,14 +42,21 @@ add_trigger_point(2, 32, 32, 50);
 한가지 주의해야할 점이 있다면 add_trigger_speed와 같이 끝나지 않는 움직임을 추가하는 경우도 있습니다. 
 이 경우에는 해당 동작 이후의 트리거 이벤트들은 활성화되지 않습니다. 
 하지만 creation code에 set_trigger이후에 set_trigger_nesting();이라는 코드까지 추가로 넣는다면 이전 이벤트의 종료 여부에 관계없이 다음 이벤트를 시행할 수 있는 트리거 인스턴스를 만들 수 있습니다.
-~세부사항~
+
+
+<세부사항>
+
 트리거 인스턴스가 할 수 있는 동작은 굉장히 많습니다. 어떤 동작이 있는지 보고 싶다면 코드 에디터의 자동완성 기능을 활용해 "add_trigger"를 쳐서 나오는 함수들을 보면 됩니다.
 또한 트리거 인스턴스의 동작은 크게 5종류로 나눌 수 있습니다.
 
 1-1. 이동 (add_trigger_speed, add_trigger_vector, ,add_trigger_point, add_trigger_rotation 등등)
+
 1-2. 스프라이트 회전 (add_trigger_image_rotation, add_trigger_loop_image_rotation, add_trigger_endless_image_rotation)
+
 1-3. 스프라이트 스케일링 (add_trigger_scale, add_trigger_loop_scale)
+
 1-4. 스프라이트 알파값 조정 (add_trigger_alpha, add_trigger_loop_alpha)
+
 1-5. 기타 (add_trigger_scatter, add_trigger_stop~ 시리즈)
 
 트리거 인스턴스의 특정 키에 할당할 액션들은 종류가 겹치면 안된다는 사실을 유의해주세요.
