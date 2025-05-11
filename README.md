@@ -1,6 +1,6 @@
 EasyTrigger by seonghoon0905
 
-Download(.yymps) : https://drive.google.com/file/d/1i5qzb9Qb44W5gIDRraiTOvHYtYVtQBQh/view?usp=sharing
+Download(.yymps) : https://drive.google.com/file/d/1GakHFWN_ycO558AAlL7wfgjT6G3IBjrS/view?usp=drive_link
 
 ![Runner_BIKWKOaimZ](https://github.com/user-attachments/assets/22c9ed09-ae27-4fb4-8bed-d75146f161bd)
 
