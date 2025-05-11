@@ -3,7 +3,7 @@ mom_start_angle = 0;
 mom_start_xscale = 0;
 mom_start_yscale = 0;
 mom_start_alpha = 0;
-
+mom_start_blend = c_white;
 
 speed_mode = false;
 speed_mode_hspd = 0;

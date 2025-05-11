@@ -14,6 +14,7 @@ function refresh_supporter(){
 	mom.image_xscale = mom_start_xscale;
 	mom.image_yscale = mom_start_yscale;
 	mom.image_alpha = mom_start_alpha;
+	mom.image_blend = mom_start_blend;
 		
 	speed_mode = false;
 	speed_mode_hspd = 0;

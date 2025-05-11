@@ -17,6 +17,7 @@ function Trigger(_arr, _direct = false) constructor{
 	supporter.mom_start_xscale = mom.image_xscale;
 	supporter.mom_start_yscale = mom.image_yscale;
 	supporter.mom_start_alpha = mom.image_alpha;	
+	supporter.mom_start_blend = mom.image_blend;
 	
 	keys = variable_clone(_arr);
 	order = 0;
