@@ -12,11 +12,6 @@ finished = false;
 // event functions
 function end_step(){
 	if(direct){
-		if(keyboard_check_pressed(global.key_config.load)){
-			delay = 0;
-			finished = false;
-		}
-		
 		if(finished){
 			return;
 		}
